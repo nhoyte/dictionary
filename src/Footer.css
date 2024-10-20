@@ -1,0 +1,10 @@
+footer {
+  font-size: 15px;
+  margin-top: 50px;
+}
+a {
+  color: blue;
+}
+a:hover {
+  color: rgb(0, 179, 255);
+}

@@ -1,0 +1,33 @@
+div.container {
+  /*border: 1px solid purple;
+  margin: 5px auto;
+  padding: 15px;
+  max-width: 50%; */
+}
+
+.Search input::placeholder {
+  font-size: 15px;
+}
+
+.Search .SearchInput {
+  padding: 6px;
+  margin: 5px 10px;
+  border: 1px solid hotpink;
+  border-radius: 3px;
+}
+.Search .SearchInput:hover {
+  background-color: rgb(228, 226, 223);
+  transition: all 200ms ease-out;
+}
+.Search .SearchButton {
+  background-color: pink;
+  padding: 8px 15px;
+  margin: 5px 10px;
+  border: 1px solid hotpink;
+  border-radius: 3px;
+}
+
+.Search .SearchButton:hover {
+  background-color: rgb(237, 158, 171);
+  transition: all 200ms ease-out;
+}

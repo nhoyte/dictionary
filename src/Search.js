@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import SearchResults from "./SearchResults";
 
 import "./Search.css";
 
 export default function Search() {
   let [term, setTerm] = useState(null);
+  let [loaded, isLoaded] = useState(false);
+  let [results, setResults] = useState({});
 
   function search(event) {
     event.preventDefault();
@@ -24,19 +27,39 @@ export default function Search() {
   }
   function handleResponse(response) {
     console.log(response.data);
+    setResults(response.data);
+    isLoaded(true);
   }
-  return (
-    <div className="Search container">
-      <form onSubmit={search}>
-        <input
-          type="search"
-          placeholder="Search for definition..."
-          className="SearchInput"
-          onChange={updateTerm}
-          autoFocus
-        />
-        <input type="submit" value="Search" className="SearchButton" />
-      </form>
-    </div>
-  );
+  if (loaded) {
+    return (
+      <div className="Search">
+        <form onSubmit={search}>
+          <input
+            type="search"
+            placeholder="Search for definition..."
+            className="SearchInput"
+            onChange={updateTerm}
+            autoFocus
+          />
+          <input type="submit" value="🔍 Search" className="SearchButton" />
+        </form>
+        <SearchResults result={results} />
+      </div>
+    );
+  } else {
+    return (
+      <div className="Search">
+        <form onSubmit={search}>
+          <input
+            type="search"
+            placeholder="Search for definition..."
+            className="SearchInput"
+            onChange={updateTerm}
+            autoFocus
+          />
+          <input type="submit" value="🔍 Search" className="SearchButton" />
+        </form>
+      </div>
+    );
+  }
 }

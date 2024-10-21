@@ -2,8 +2,17 @@
   text-align: center;
   font-family: "SUSE", sans-serif;
 }
-h1 {
+.App .container {
+  background-color: rgb(255, 250, 245);
+  border: 2px solid rgb(209, 160, 199);
+  border-radius: 8px;
+  margin: 45px auto;
+  padding: 15px;
+  max-width: 45%;
+}
+.App h1 {
   font-size: 40px;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 35px;
 }

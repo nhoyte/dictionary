@@ -1,0 +1,25 @@
+.SearchResults {
+  text-align: left;
+}
+.container-inner {
+  padding: 10px 30px;
+  margin: 15px auto;
+  max-width: 100%;
+}
+.SearchedWord,
+.PartOfSpeech {
+  font-weight: bold;
+}
+.SearchedWord {
+  margin: 5px;
+}
+.Definition {
+  margin: 5px 0 25px 0;
+}
+.PartOfSpeech {
+  margin: 20px 5px 5px 5px;
+}
+.PartOfSpeech,
+.Synonyms {
+  color: red;
+}

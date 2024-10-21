@@ -16,7 +16,7 @@ export default function Search() {
     event.preventDefault();
     setTerm(event.target.value);
   }
-  //Fetch response from SheCodes API: https://www.shecodes.io/learn/apis/dictionary
+  //Fetch response from SheCodes API: https://www.shecodes.io/learn/apis/dictionaryy
   function searchTerm(term) {
     let apiKey = "b00377005017b9aacft302b5od1aa426";
     let url = `https://api.shecodes.io/dictionary/v1/define?word=${term}&key=${apiKey}`;

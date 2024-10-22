@@ -1,0 +1,21 @@
+.Meanings .PartOfSpeech {
+  font-weight: bold;
+}
+.Meanings .Definition {
+  margin: 0 0 5px 0;
+}
+.Meanings .PartOfSpeech {
+  margin: 20px 5px 0 5px;
+}
+.Meanings .PartOfSpeech,
+.Synonyms {
+  color: red;
+}
+.Meanings .ExampleSentence {
+  margin: 0 0 20px 0;
+}
+.Meanings .ExampleSentence .Example {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}

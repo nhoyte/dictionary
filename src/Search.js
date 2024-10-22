@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+
 import SearchResults from "./SearchResults";
 
 import "./Search.css";
@@ -11,7 +12,6 @@ export default function Search() {
 
   function search(event) {
     event.preventDefault();
-    alert(`Searching for ${term} definition 🔍`);
     searchTerm(term);
   }
 

@@ -29,13 +29,15 @@ export default function Meanings(props) {
     }
   }
   return (
-    <div className="Meanings">
-      <div className="text-capitalize PartOfSpeech">
-        {props.data.partOfSpeech}
+    <section>
+      <div className="Meanings">
+        <div className="text-capitalize PartOfSpeech">
+          {props.data.partOfSpeech}
+        </div>
+        <div className="Definition"> {props.data.definition}</div>
+        {DisplayExamples()}
+        {DisplaySynonyms()}
       </div>
-      <div className="Definition"> {props.data.definition}</div>
-      {DisplayExamples()}
-      {DisplaySynonyms()}
-    </div>
+    </section>
   );
 }

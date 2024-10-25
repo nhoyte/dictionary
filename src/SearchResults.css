@@ -1,10 +1,17 @@
+.container-inner {
+  padding: 3% 0.5%;
+  margin: 15px auto;
+  max-width: 90%;
+}
 .SearchResults {
   text-align: left;
 }
-.container-inner {
-  padding: 3% 8%;
-  margin: 15px auto;
-  max-width: 100%;
+section {
+  margin: 10px;
+  padding: 3%;
+  border-top: 1px solid rgb(0, 0, 0, 0.15);
+  border-radius: 6px;
+  box-shadow: 3px 5px 11px 1px rgb(0, 0, 0, 0.12);
 }
 .SearchResults .SearchedWord {
   font-size: 40px;

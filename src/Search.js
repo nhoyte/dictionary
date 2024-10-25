@@ -62,6 +62,12 @@ export default function Search() {
           />
           <input type="submit" value="🔍 Search" className="SearchButton" />
         </form>
+        <div className="SuggestedWords">
+          Suggested Words: application, value, friend, shelter, fun
+        </div>
+        <div className="homeImage">
+          <img src="\Dictionary_Blue.jpg" alt="Dictionary" />
+        </div>
       </div>
     );
   }

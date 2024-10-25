@@ -43,6 +43,9 @@ export default function Search() {
           />
           <input type="submit" value="🔍 Search" className="SearchButton" />
         </form>
+        <div className="SuggestedWords">
+          Suggested Words: application, value, friend, shelter, fun
+        </div>
         <SearchResults result={results} />
       </div>
     );

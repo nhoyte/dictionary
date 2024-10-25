@@ -1,26 +1,31 @@
 .Search input::placeholder {
   font-size: 15px;
 }
-
 .Search .SearchInput {
   padding: 6px;
+  width: 60%;
   margin: 5px 10px;
   border: 1px solid hotpink;
   border-radius: 3px;
 }
 .Search .SearchInput:hover {
-  background-color: rgb(216, 215, 214);
+  background-color: rgb(241, 234, 226);
   transition: all 200ms ease-out;
 }
 .Search .SearchButton {
   background-color: pink;
+  width: 20%;
   padding: 6px 10px;
   margin: 5px 10px;
   border: 1px solid hotpink;
   border-radius: 3px;
 }
-
 .Search .SearchButton:hover {
   background-color: rgb(237, 158, 171);
   transition: all 200ms ease-out;
+}
+.Search .SuggestedWords {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
 }

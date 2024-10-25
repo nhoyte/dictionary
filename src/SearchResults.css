@@ -2,12 +2,15 @@
   text-align: left;
 }
 .container-inner {
-  padding: 10px 30px;
+  padding: 3% 8%;
   margin: 15px auto;
   max-width: 100%;
 }
-.SearchedWord {
-  font-size: 30px;
+.SearchResults .SearchedWord {
+  font-size: 40px;
   font-weight: bold;
   margin: 5px;
+}
+div.Phonetics {
+  font-size: 30px;
 }

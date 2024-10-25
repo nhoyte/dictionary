@@ -1,11 +1,19 @@
 .Meanings .PartOfSpeech {
   font-weight: bold;
 }
-.Meanings .Definition {
-  margin: 0 0 5px 0;
-}
 .Meanings .PartOfSpeech {
   margin: 20px 5px 0 5px;
+  font-size: 22px;
+}
+.Meanings .Definition {
+  margin: 0 0 5px 5px;
+}
+.Meanings .Synonyms {
+  margin: 0 0 25px 5px;
+  display: inline;
+}
+.Meanings .SynonymWord {
+  display: inline;
 }
 .Meanings .PartOfSpeech,
 .Synonyms {

@@ -17,6 +17,8 @@ export default function SearchResults(props) {
               <Meanings data={meaning} />
             </div>
           );
+        } else {
+          return null;
         }
       })}
     </div>

@@ -10,6 +10,8 @@ export default function Meanings(props) {
           <em>"{props.data.example}"</em>
         </p>
       );
+    } else {
+      return null;
     }
   }
   function DisplaySynonyms() {
@@ -26,6 +28,8 @@ export default function Meanings(props) {
           })}
         </div>
       );
+    } else {
+      return null;
     }
   }
   return (

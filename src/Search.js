@@ -7,7 +7,7 @@ import "./Search.css";
 
 export default function Search() {
   let [term, setTerm] = useState(null);
-  let [loaded, isLoaded] = useState(false);
+  let [response, hasResponse] = useState(false);
   let [results, setResults] = useState({});
 
   function search(event) {
@@ -26,11 +26,20 @@ export default function Search() {
     axios.get(url).then(handleResponse);
   }
   function handleResponse(response) {
-    console.log(response.data);
-    setResults(response.data);
-    isLoaded(true);
+    console.log(response);
+
+    console.log(response.status);
+    // Checks if word was not found by checking if response.data has a message
+    if (response.data.message) {
+      hasResponse(false);
+      alert("Sorry, word not found...🤷🏾");
+      window.location.reload(false);
+    } else {
+      setResults(response.data);
+      hasResponse(true);
+    }
   }
-  if (loaded) {
+  if (response) {
     return (
       <div className="Search">
         <form onSubmit={search}>

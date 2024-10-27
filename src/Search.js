@@ -49,7 +49,6 @@ export default function Search() {
   }
 
   if (response) {
-    console.log({ imageResults });
     return (
       <div className="Search">
         <form onSubmit={search}>

@@ -8,11 +8,169 @@
   border-radius: 8px;
   margin: 25px auto;
   padding: 15px;
-  max-width: 55%;
+  max-width: 65%;
 }
 .App h1 {
   font-size: 45px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 35px;
+}
+/* x-small screen */
+@media (width < 576px) {
+  .App h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .App .container {
+    padding: 10px;
+    max-width: 90%;
+  }
+  .Search .SearchInput {
+    padding: 2px;
+    width: 50%;
+    margin: 3px 6px;
+  }
+  .Search input::placeholder {
+    font-size: 15px;
+  }
+  .Search .SearchButton {
+    font-size: 18px;
+    width: 30%;
+    padding: 4px 6px;
+  }
+  .Search div.SuggestedWords {
+    font-size: 12px;
+  }
+  .Search .homeImage img {
+    height: 210px;
+    width: 150px;
+    margin: 50px auto;
+  }
+  /* Search Results */
+  .SearchResults section {
+    margin: 5px;
+    padding: 0.5%;
+  }
+  .SearchResults .SearchedWord {
+    font-size: 30px;
+  }
+  div.Phonetics {
+    font-size: 25px;
+  }
+  /* Images */
+  .ImageGrid {
+    padding: 1% 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+    margin: 5px 5px 25px 5px;
+  }
+  /* Footer */
+  footer {
+    font-size: 15px;
+    margin: 40px 8px 25px 8px;
+  }
+}
+/* small screen */
+@media (576px <= width < 768px) {
+  .App h1 {
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .App .container {
+    padding: 10px;
+    max-width: 90%;
+  }
+  .Search .SearchInput {
+    padding: 2px;
+    width: 550;
+    margin: 3px 8px;
+  }
+  .Search input::placeholder {
+    font-size: 15px;
+  }
+  .Search .SearchButton {
+    font-size: 18px;
+    width: 30%;
+    padding: 4px 6px;
+  }
+  .Search div.SuggestedWords {
+    font-size: 12px;
+  }
+  /* Search Results */
+  .SearchResults section {
+    margin: 5px;
+    padding: 0.5%;
+  }
+  .SearchResults .SearchedWord {
+    font-size: 30px;
+  }
+  div.Phonetics {
+    font-size: 25px;
+  }
+  /* Images */
+  .ImageGrid {
+    padding: 1% 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+    margin: 5px 5px 25px 5px;
+  }
+  /* Footer */
+  footer {
+    font-size: 15px;
+    margin: 40px 8px 25px 8px;
+  }
+}
+/* medium screen */
+@media (768px <= width < 992px) {
+  .App h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .App .container {
+    padding: 10px;
+    max-width: 90%;
+  }
+  .Search .SearchInput {
+    padding: 4px;
+    width: 550;
+    margin: 3px 8px;
+  }
+  .Search input::placeholder {
+    font-size: 18px;
+  }
+  .Search .SearchButton {
+    font-size: 20px;
+    width: 30%;
+    padding: 5px 10px;
+  }
+  .Search div.SuggestedWords {
+    font-size: 16px;
+  }
+  /* Search Results */
+  .SearchResults section {
+    margin: 5px;
+    padding: 0.5%;
+  }
+  .SearchResults .SearchedWord {
+    font-size: 40px;
+  }
+  div.Phonetics {
+    font-size: 30px;
+  }
+  /* Images */
+  .ImageGrid {
+    padding: 1% 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+    margin: 5px 5px 25px 5px;
+  }
+  /* Footer */
+  footer {
+    font-size: 18px;
+    margin: 40px 8px;
+  }
 }

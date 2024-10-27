@@ -6,7 +6,7 @@
 .SearchResults {
   text-align: left;
 }
-section {
+.SearchResults section {
   margin: 10px;
   padding: 3%;
   border-top: 1px solid rgb(0, 0, 0, 0.15);

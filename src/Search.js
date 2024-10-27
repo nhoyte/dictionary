@@ -49,7 +49,7 @@ export default function Search() {
   }
 
   if (response) {
-    console.log(imageResults);
+    console.log(`imageResults: ${imageResults}`);
     return (
       <div className="Search">
         <form onSubmit={search}>
@@ -66,18 +66,7 @@ export default function Search() {
           Suggested Words: application, value, friend, shelter, fun
         </div>
         <SearchResults result={results} />
-        <div className="ImageGrid">
-          {/* Displays the first 6 images */}
-          {imageResults.map(function (image, index) {
-            return (
-              <div key={index}>
-                <a href={image.src.original} target="_blank" rel="noreferrer">
-                  <Images image={image} />
-                </a>
-              </div>
-            );
-          })}
-        </div>
+        <Images images={imageResults} />
       </div>
     );
   } else {

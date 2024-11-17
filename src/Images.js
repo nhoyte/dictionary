@@ -2,7 +2,7 @@ import React from "react";
 import "./Images.css";
 
 export default function Images(props) {
-  if (props.images) {
+  if (props.images.length > 0) {
     return (
       <div className="ImageGrid">
         {props.images.map(function (image, index) {

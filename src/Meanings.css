@@ -1,14 +1,14 @@
 .Meanings .PartOfSpeech {
+  margin: 0 5px 0 5px;
+  font-size: 20px;
   font-weight: bold;
 }
-.Meanings .PartOfSpeech {
-  margin: 0 5px 0 5px;
-  font-size: 22px;
-}
 .Meanings .Definition {
-  margin: 0 0 2px 5px;
+  font-size: 18px;
+  margin: 0 0 20px 5px;
 }
 .Meanings .Synonyms {
+  font-size: 18px;
   margin: 0 0 25px 5px;
   display: inline;
 }
@@ -19,11 +19,12 @@
 .Synonyms {
   color: red;
 }
-.Meanings .ExampleSentence {
+.Meanings p.ExampleSentence {
+  font-size: 18px;
   margin: 0 0 20px 0;
 }
 .Meanings .ExampleSentence .Example {
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: underline;
   text-decoration-style: wavy;
 }

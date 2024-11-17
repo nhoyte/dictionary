@@ -15,6 +15,7 @@ export default function Search() {
   function search(event) {
     event.preventDefault();
     searchTerm(term);
+    searchImage(term);
   }
 
   function updateTerm(event) {
@@ -23,32 +24,51 @@ export default function Search() {
   }
 
   function searchTerm(term) {
-    //Fetch response from SheCodes Dictionary API: https://www.shecodes.io/learn/apis/dictionary
-    let apiKey = "b00377005017b9aacft302b5od1aa426";
-    let url = `https://api.shecodes.io/dictionary/v1/define?word=${term}&key=${apiKey}`;
-    axios.get(url).then(handleResponse);
-
+    //Fetch response from Free Dictionary API: https://dictionaryapi.dev/
+    let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${term}`;
+    axios
+      .get(url)
+      .then(handleResponse)
+      .catch(function (error) {
+        if (error.response) {
+          hasResponse(false);
+          alert(
+            "Sorry, word not found...🤷🏾. Please check your spelling and try again."
+          );
+          window.location.reload(false);
+          // The request was made and word not found
+          console.log(error.response.data);
+        }
+      });
+  }
+  function searchImage(term) {
     // Make API call to Images API: https://www.shecodes.io/learn/apis/images
     let imageAPIKey = "b00377005017b9aacft302b5od1aa426";
     let imageURL = `https://api.shecodes.io/images/v1/search?query=${term}&key=${imageAPIKey}`;
-    axios.get(imageURL).then(handleImageResponse);
+    axios
+      .get(imageURL)
+      .then(handleImageResponse)
+      .catch(function (error) {
+        if (error.response) {
+          hasResponse(false);
+          console.log("No images found...");
+          // The request was made and no images were returned
+          console.log(error.response.data);
+        }
+      });
   }
+
   function handleResponse(response) {
-    // Checks if word was not found by checking if response.data has a message
-    if (response.data.message) {
-      hasResponse(false);
-      alert("Sorry, word not found...🤷🏾");
-      window.location.reload(false);
-    } else {
-      setResults(response.data);
-      hasResponse(true);
-    }
+    setResults(response.data[0]);
+    hasResponse(true);
   }
   function handleImageResponse(response) {
     setImageResults(response.data.photos);
   }
 
   if (response) {
+    console.log(imageResults);
+
     return (
       <div className="Search">
         <form onSubmit={search}>

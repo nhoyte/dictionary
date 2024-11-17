@@ -8,10 +8,10 @@
   border-radius: 8px;
   margin: 25px auto;
   padding: 15px;
-  max-width: 65%;
+  max-width: 50%;
 }
 .App h1 {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 35px;
@@ -19,33 +19,34 @@
 /* x-small screen */
 @media (width < 576px) {
   .App h1 {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 10px;
     margin-bottom: 25px;
   }
   .App .container {
     padding: 10px;
-    max-width: 90%;
+    max-width: 80%;
   }
   .Search .SearchInput {
-    padding: 2px;
+    font-size: 14px;
+    padding: 3px;
     width: 50%;
-    margin: 3px 6px;
+    margin: 0 4px;
   }
   .Search input::placeholder {
-    font-size: 15px;
+    font-size: 14px;
   }
   .Search .SearchButton {
-    font-size: 18px;
+    font-size: 14px;
     width: 30%;
-    padding: 4px 6px;
+    padding: 3px 6px;
   }
   .Search div.SuggestedWords {
-    font-size: 12px;
+    font-size: 10px;
   }
   .Search .homeImage img {
-    height: 210px;
-    width: 150px;
+    height: 160px;
+    width: 100px;
     margin: 50px auto;
   }
   /* Search Results */
@@ -54,10 +55,17 @@
     padding: 0.5%;
   }
   .SearchResults .SearchedWord {
-    font-size: 30px;
+    font-size: 18px;
   }
   div.Phonetics {
-    font-size: 25px;
+    font-size: 16px;
+  }
+  /* Meanings */
+  .Meanings .PartOfSpeech,
+  .Meanings .Definition,
+  .Meanings .Synonyms,
+  .Meanings p.ExampleSentence {
+    font-size: 14px;
   }
   /* Images */
   .ImageGrid {
@@ -68,7 +76,7 @@
   }
   /* Footer */
   footer {
-    font-size: 15px;
+    font-size: 10px;
     margin: 40px 8px 25px 8px;
   }
 }
@@ -110,6 +118,13 @@
   div.Phonetics {
     font-size: 25px;
   }
+  /* Meanings */
+  .Meanings .PartOfSpeech,
+  .Meanings .Definition,
+  .Meanings .Synonyms,
+  .Meanings p.ExampleSentence {
+    font-size: 16px;
+  }
   /* Images */
   .ImageGrid {
     padding: 1% 3%;
@@ -126,29 +141,30 @@
 /* medium screen */
 @media (768px <= width < 992px) {
   .App h1 {
-    font-size: 40px;
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 25px;
   }
   .App .container {
     padding: 10px;
-    max-width: 90%;
+    max-width: 80%;
   }
   .Search .SearchInput {
+    font-size: 16px;
     padding: 4px;
-    width: 550;
-    margin: 3px 8px;
+    width: 45%;
+    margin: 0 5px;
   }
   .Search input::placeholder {
-    font-size: 18px;
+    font-size: 12px;
   }
   .Search .SearchButton {
-    font-size: 20px;
-    width: 30%;
-    padding: 5px 10px;
+    font-size: 16px;
+    width: 20%;
+    padding: 4px 10px;
   }
   .Search div.SuggestedWords {
-    font-size: 16px;
+    font-size: 12px;
   }
   /* Search Results */
   .SearchResults section {
@@ -156,10 +172,17 @@
     padding: 0.5%;
   }
   .SearchResults .SearchedWord {
-    font-size: 40px;
+    font-size: 25px;
   }
   div.Phonetics {
-    font-size: 30px;
+    font-size: 20px;
+  }
+  /* Meanings */
+  .Meanings .PartOfSpeech,
+  .Meanings .Definition,
+  .Meanings .Synonyms,
+  .Meanings p.ExampleSentence {
+    font-size: 16px;
   }
   /* Images */
   .ImageGrid {
@@ -170,7 +193,66 @@
   }
   /* Footer */
   footer {
-    font-size: 18px;
+    font-size: 12px;
+    margin: 40px 8px;
+  }
+}
+/* Large screen */
+@media (992px <= width < 1200px) {
+  .App h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .App .container {
+    padding: 10px;
+    max-width: 80%;
+  }
+  .Search .SearchInput {
+    font-size: 16px;
+    padding: 4px;
+    width: 45%;
+    margin: 0 5px;
+  }
+  .Search input::placeholder {
+    font-size: 14px;
+  }
+  .Search .SearchButton {
+    font-size: 16px;
+    width: 20%;
+    padding: 4px 10px;
+  }
+  .Search div.SuggestedWords {
+    font-size: 12px;
+  }
+  /* Search Results */
+  .SearchResults section {
+    margin: 5px;
+    padding: 0.5%;
+  }
+  .SearchResults .SearchedWord {
+    font-size: 30px;
+  }
+  div.Phonetics {
+    font-size: 25px;
+  }
+  /* Meanings */
+  .Meanings .PartOfSpeech,
+  .Meanings .Definition,
+  .Meanings .Synonyms,
+  .Meanings p.ExampleSentence {
+    font-size: 16px;
+  }
+  /* Images */
+  .ImageGrid {
+    padding: 1% 3%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 10px;
+    margin: 5px 5px 25px 5px;
+  }
+  /* Footer */
+  footer {
+    font-size: 12px;
     margin: 40px 8px;
   }
 }

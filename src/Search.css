@@ -1,7 +1,7 @@
 .Search .SearchInput {
-  padding: 8px;
-  width: 60%;
-  margin: 5px 10px;
+  padding: 2px;
+  width: 45%;
+  margin: 3px 10px;
   border: 1px solid hotpink;
   border-radius: 3px;
 }
@@ -13,10 +13,11 @@
   transition: all 200ms ease-out;
 }
 .Search .SearchButton {
+  font-size: 16px;
   background-color: pink;
-  width: 20%;
-  padding: 8px 10px;
-  margin: 5px 15px;
+  width: 15%;
+  padding: 4px;
+  margin: 3px 15px;
   border: 1px solid hotpink;
   border-radius: 3px;
 }
@@ -25,12 +26,12 @@
   transition: all 200ms ease-out;
 }
 .Search div.SuggestedWords {
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
 .Search .homeImage img {
-  height: 280px;
-  width: 220px;
+  height: 210px;
+  width: 150px;
   margin: 80px auto;
 }

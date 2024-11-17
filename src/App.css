@@ -16,7 +16,7 @@
   margin-top: 0;
   margin-bottom: 35px;
 }
-/* x-small screen */
+/* X-small screen */
 @media (width < 576px) {
   .App h1 {
     font-size: 20px;
@@ -28,16 +28,16 @@
     max-width: 80%;
   }
   .Search .SearchInput {
-    font-size: 14px;
+    font-size: 12px;
     padding: 3px;
-    width: 50%;
-    margin: 0 4px;
+    width: 55%;
+    margin: 0 2px;
   }
   .Search input::placeholder {
-    font-size: 14px;
+    font-size: 12px;
   }
   .Search .SearchButton {
-    font-size: 14px;
+    font-size: 12px;
     width: 30%;
     padding: 3px 6px;
   }
@@ -45,8 +45,8 @@
     font-size: 10px;
   }
   .Search .homeImage img {
-    height: 160px;
-    width: 100px;
+    height: 130px;
+    width: 80px;
     margin: 50px auto;
   }
   /* Search Results */
@@ -80,7 +80,7 @@
     margin: 40px 8px 25px 8px;
   }
 }
-/* small screen */
+/* Small screen */
 @media (576px <= width < 768px) {
   .App h1 {
     font-size: 35px;
@@ -138,7 +138,7 @@
     margin: 40px 8px 25px 8px;
   }
 }
-/* medium screen */
+/* Medium screen */
 @media (768px <= width < 992px) {
   .App h1 {
     font-size: 25px;

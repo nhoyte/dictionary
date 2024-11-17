@@ -42,7 +42,7 @@ export default function Search() {
       });
   }
   function searchImage(term) {
-    // Make API call to Images API: https://www.shecodes.io/learn/apis/images
+    // Make API call to SheCodes Images API: https://www.shecodes.io/learn/apis/images
     let imageAPIKey = "b00377005017b9aacft302b5od1aa426";
     let imageURL = `https://api.shecodes.io/images/v1/search?query=${term}&key=${imageAPIKey}`;
     axios
@@ -52,23 +52,22 @@ export default function Search() {
         if (error.response) {
           hasResponse(false);
           console.log("No images found...");
-          // The request was made and no images were returned
+          // The request was made and no images were returned for inputted term
           console.log(error.response.data);
         }
       });
   }
-
+  //Handles response from Dictionary API
   function handleResponse(response) {
     setResults(response.data[0]);
     hasResponse(true);
   }
+  //Handles response from SheCodes Images API
   function handleImageResponse(response) {
     setImageResults(response.data.photos);
   }
 
   if (response) {
-    console.log(imageResults);
-
     return (
       <div className="Search">
         <form onSubmit={search}>
